@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://115.29.113.29:3306/le"
+                        userId="hotel" password="internet"/>
+
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.spring.pojo" targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.spring.mapper" targetProject="src/main/resources/">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.spring.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--
+        <table tableName="base_hotel_info" domainObjectName="BaseHotelInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="base_hotel_room" domainObjectName="BaseHotelRoom"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="product_base_info" domainObjectName="ProductBaseInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="us_login_status" domainObjectName="UserLoginStatus"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="member_bnb_union_info" domainObjectName="BnbUnionInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_base_info" domainObjectName="CouponBaseInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_hotel_product" domainObjectName="CouponHotelProduct"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_usage_info" domainObjectName="CouponUsageInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_usage_record" domainObjectName="CouponUsageRecord"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_use_condition" domainObjectName="CouponUseCondition"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_grant_info" domainObjectName="CouponGrantInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="dict_holiday" domainObjectName="HolidayInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="member_points_exchange_rule" domainObjectName="PointsExchangeRule"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="accounting_bank_info" domainObjectName="AccountingBankInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="accounting_detail_info" domainObjectName="AccountingDetailInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="accounting_item_info" domainObjectName="AccountingItemInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="accounting_transfer_info" domainObjectName="AccountingTransferInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+    </context>
+</generatorConfiguration>
